@@ -9,7 +9,15 @@
         cursor: pointer;
         text-transform: uppercase;
         margin-right: 0.5rem;
-        
+        transition: opacity 0.15s;
+    }
+
+    .button-subscribe:hover{
+        opacity: 0.8;
+    }
+
+    .button-subscribe:active{
+        opacity: 0.6;
     }
 
     .button-join{
@@ -24,7 +32,17 @@
         text-transform: uppercase;
         cursor: pointer;
         margin-right: 0.5rem;
+        transition: background-color 1s, color 1s;
     }
+    .button-join:hover{
+        background-color: rgb(75, 75, 200);
+        color: white;
+    }
+
+    .button-join:active{
+        opacity: 0.8;
+    }
+
     .button-tweet{
         font-style: bold;
         background-color: rgb(2, 158, 255);
