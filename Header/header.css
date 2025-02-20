@@ -4,9 +4,10 @@ header{
     flex-direction: row;
     background-color: red;
     justify-content: space-between;
-    height: 10%;
+    height: 4rem;
     width: 100%;
     position: fixed;
+    
 }
 
 .left-side-items{
