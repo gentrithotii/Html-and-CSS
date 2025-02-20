@@ -10,6 +10,7 @@ header{
 }
 
 .left-side-items{
+    width: 20%;
     padding-right: 1rem;
     padding-left: 1rem;
     background-color: aqua;
@@ -18,18 +19,22 @@ header{
     align-items: center;
 }
 .middle-items{
+    width: 20%;
     padding-right: 1rem;
     padding-left: 1rem;
     display: flex;
     justify-content: center;
     background-color: lightcoral;
     align-items: center;
+    
 }
 .right-side-items{
+    width: 20%;
     padding-right: 1rem;
     padding-left: 1rem;
     display: flex;
     background-color: yellowgreen;
     align-items: center;
+    justify-content: center;
 }
 
