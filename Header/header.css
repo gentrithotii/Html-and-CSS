@@ -4,16 +4,32 @@ header{
     flex-direction: row;
     background-color: red;
     justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    position: fixed;
 }
 
 .left-side-items{
-background-color: aqua;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .middle-items{
-background-color: lightcoral;
-
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: lightcoral;
+    align-items: center;
 }
 .right-side-items{
-background-color: yellowgreen;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    background-color: yellowgreen;
+    align-items: center;
 }
 
