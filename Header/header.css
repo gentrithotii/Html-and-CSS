@@ -1,0 +1,19 @@
+header{
+    font-family: Roboto, ;
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    justify-content: space-between;
+}
+
+.left-side-items{
+background-color: aqua;
+}
+.middle-items{
+background-color: lightcoral;
+
+}
+.right-side-items{
+background-color: yellowgreen;
+}
+
