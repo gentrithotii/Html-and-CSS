@@ -3,5 +3,4 @@ main{
     display: flex;
     flex-direction: row;
     background-color: purple;
-    height: 100%;
 }
