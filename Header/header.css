@@ -4,13 +4,13 @@ header{
     flex-direction: row;
     background-color: red;
     justify-content: space-between;
-    height: 5rem;
+    top: 0;
     width: 100%;
     position: fixed;
 }
 
 .left-side-items{
-    width: 20%;
+    width: 20rem;
     padding-right: 1rem;
     padding-left: 1rem;
     background-color: aqua;
@@ -28,20 +28,29 @@ header{
     align-items: center;
     
 }
-.right-side-items{
-    width: 20%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    display: flex;
-    background-color: yellowgreen;
-    align-items: center;
-    justify-content: center;
-}
 
 .dragon-image{
     object-fit: contain;
-    height: 6rem;
+    height: 5rem;
     min-width: 1rem;
     
 }
+
+.right-side-items{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 20rem;
+    display: flex;
+    background-color: yellowgreen;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.avatar-image{
+    height: 50px;
+    border-radius: 2rem;
+}
+
+
 

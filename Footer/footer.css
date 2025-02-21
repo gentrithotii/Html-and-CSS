@@ -3,6 +3,7 @@ footer{
     flex-direction: row;
     background-color: rgb(166, 0, 0);
     justify-content: center;
-    height: 50px;
+    height: 5rem;
     bottom: 0;
+    padding-bottom: 5rem;
 }
