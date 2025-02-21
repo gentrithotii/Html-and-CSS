@@ -3,4 +3,11 @@ main{
     display: flex;
     flex-direction: row;
     background-color: purple;
+    padding-top: 5rem;
+    justify-content: space-between;
+    padding-right: 10rem;
+}
+
+.main-content{
+    background-color: bisque;
 }

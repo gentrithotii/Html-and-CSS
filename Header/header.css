@@ -1,10 +1,9 @@
 header{
-    font-family: Roboto, ;
     display: flex;
     flex-direction: row;
     background-color: red;
     justify-content: space-between;
-    top: 0;
+    /* top: 0; */
     width: 100%;
     position: fixed;
 }
