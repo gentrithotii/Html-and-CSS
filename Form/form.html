@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+
+    <script src="/Form/form.js" defer></script>
+
+</head>
+<body>
+    <form class="form-Wrapper" onsubmit="storeData(event)">
+
+        <label for="fName">First name:</label><br>
+        <input type="text" id="fName" value="" ><br><br>
+
+        <label for="fLastName">Last name:</label><br>
+        <input type="text" id="fLastName" value="" ><br><br>
+
+        <label for="fEmail">Email:</label><br>
+        <input type="text" id="fEmail" value="" ><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <button onclick="getLocalStorageData()">Show Stored Data</button>
+
+    <button onclick="clearData()">Clear Stored Data</button>
+
+    
+</body>
+</html>
