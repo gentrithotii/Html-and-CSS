@@ -1,13 +1,19 @@
 main{
-    flex:1;
-    display: flex;
+    display: flex; 
+    flex: auto;
     flex-direction: row;
     background-color: purple;
-    padding-top: 5rem;
+    padding-top: 6rem;
     justify-content: space-between;
-    padding-right: 10rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
 }
 
 .main-content{
+    flex: auto;
     background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    
 }
