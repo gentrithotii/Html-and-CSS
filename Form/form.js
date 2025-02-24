@@ -15,9 +15,10 @@ async function storeData(event) {
 
   let userList = JSON.parse(localStorage.getItem("userList")) || [];
 
+  if (object.userEmail.trim() === "") return alert("Fill text");
+
   if (checkIfUserExist(object.userEmail, userList)) {
-    alert("User already exists");
-    return;
+    return alert("User already exists");
   }
 
   await userList.push(object);
@@ -25,6 +26,7 @@ async function storeData(event) {
   localStorage.setItem("userList", JSON.stringify(userList));
 
   alert("Data has been saved");
+  document.getElementById("my-Form").reset();
 }
 
 function checkIfUserExist(userEmail, userList) {

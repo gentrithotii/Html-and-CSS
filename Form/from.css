@@ -1,4 +1,35 @@
 .form-Wrapper{
 display: flex;
-align-items:center;
+width: 10%;
+height: 20%;
+flex-direction: column;
 }
+
+.form-fName, .form-fLastName, .form-fEmail{
+padding-bottom: 1rem;
+}
+
+.button-blue{
+        border-style: solid;
+        border-width: 0.05rem;
+        border-color: rgb(75, 75, 200);
+        background-color: white;
+        color: rgb(63, 63, 216);
+        border-radius: 0.1rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        padding-right: 0.6rem;
+        padding-left: 0.6rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.15s, color 0.15s, opacity 0.15;
+        margin-bottom: 2rem;
+    }
+    .button-blue:hover{
+        background-color: rgb(75, 75, 200);
+        color: white;
+    }
+
+    .button-blue:active{
+        opacity: 0.8;
+    }

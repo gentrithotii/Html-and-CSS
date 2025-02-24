@@ -5,28 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>From</title>
 
+    <link rel="stylesheet" href="from.css">
     <script src="/Form/form.js" defer></script>
 
 </head>
 <body>
-    <form class="form-Wrapper" onsubmit="storeData(event)">
+    <form class="form-Wrapper" id="my-Form"  onsubmit="storeData(event)">
 
-        <label for="fName">First name:</label><br>
-        <input type="text" id="fName" value="" ><br><br>
+        <div class="form-fName">
+            <label style="align-items: center;" for="fName">First name:</label>
+            <input type="text" id="fName" value="">
+        </div>
 
-        <label for="fLastName">Last name:</label><br>
-        <input type="text" id="fLastName" value="" ><br><br>
+         <div class="form-fLastName">
+             <label for="fLastName">Last name:</label>
+             <input type="text" id="fLastName" value="" >
+        </div>
 
-        <label for="fEmail">Email:</label><br>
-        <input type="text" id="fEmail" value="" ><br><br>
-
-        <input type="submit" value="Submit">
+         <div class="form-fEmail">
+             <label for="fEmail">Email:</label>
+             <input type="text" id="fEmail" value="" >
+        </div>
+    
+        <input class="button-blue" type="submit" value="Submit">
 
     </form>
+    
+    <button class="button-blue" onclick="getLocalStorageData()">Show Local Storage Data</button>
 
-    <button onclick="getLocalStorageData()">Show Local Storage Data</button>
-
-    <button onclick="clearData()">Clear Stored Data</button>
+    <button class="button-blue" onclick="clearData()">Clear Stored Data</button>
 
     
 </body>
