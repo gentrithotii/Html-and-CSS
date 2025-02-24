@@ -1,6 +1,6 @@
 const userList = [];
 
-function storeData(event) {
+async function storeData(event) {
   event.preventDefault();
 
   var firstName = document.getElementById("fName").value;
@@ -15,11 +15,20 @@ function storeData(event) {
 
   let userList = JSON.parse(localStorage.getItem("userList")) || [];
 
-  userList.push(object);
+  if (checkIfUserExist(object.userEmail, userList)) {
+    alert("User already exists");
+    return;
+  }
+
+  await userList.push(object);
 
   localStorage.setItem("userList", JSON.stringify(userList));
 
   alert("Data has been saved");
+}
+
+function checkIfUserExist(userEmail, userList) {
+  return userList.some((test) => test.userEmail === userEmail);
 }
 
 function getLocalStorageData() {
