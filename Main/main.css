@@ -1,6 +1,6 @@
 main{
+    flex: 1;
     display: flex; 
-    flex: auto;
     flex-direction: row;
     background-color: purple;
     padding-top: 6rem;
