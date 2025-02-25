@@ -6,11 +6,13 @@ async function storeData(event) {
   var firstName = document.getElementById("fName").value;
   var lastName = document.getElementById("fLastName").value;
   var userEmail = document.getElementById("fEmail").value;
+  var favoriteCodeLang = document.getElementById("fLanguages").value;
 
   var object = {
     firstName,
     lastName,
     userEmail,
+    favoriteCodeLang,
   };
 
   let userList = JSON.parse(localStorage.getItem("userList")) || [];
