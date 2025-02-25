@@ -26,14 +26,22 @@
              <label for="fEmail">Email:</label>
              <input type="text" id="fEmail" value="" >
         </div>
+
+        <label>Fav coding language</label>
+        <select name="fLanguages" id="fLanguages">
+            <option value="C">C</option>
+            <option value="Java">Java</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+        </select>
     
         <input class="button-blue" type="submit" value="Submit">
 
     </form>
     
-    <button class="button-blue" onclick="getLocalStorageData()">Show Local Storage Data</button>
+    <button class="button" onclick="getLocalStorageData()">Show Local Storage Data</button>
 
-    <button class="button-blue" onclick="clearData()">Clear Stored Data</button>
+    <button class="button" onclick="clearData()">Clear Stored Data</button>
 
     
 </body>
