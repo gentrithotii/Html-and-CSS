@@ -59,6 +59,8 @@ function getLocalStorageData() {
 }
 
 function clearData() {
+  let table = document.querySelector(".table-my-0 tbody");
+  table.remove();
   localStorage.clear();
 }
 
