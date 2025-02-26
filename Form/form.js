@@ -75,13 +75,17 @@ function addElement() {
 }
 
 function showLocalStorageData() {
-  let storeData = JSON.parse(localStorage.getItem("userList") || []);
-
-  arraDat = storeData;
-  let table = document.querySelector(".table-my-0");
+  let table = document.querySelector(".table-my-0 tbody");
   table.innerHTML = "";
 
-  for (let object of arraDat) {
+  try {
+    var storedData = JSON.parse(localStorage.getItem("userList")) || [];
+  } catch (error) {
+    console.error("Error parsing JSON", error);
+    return;
+  }
+
+  for (let object of storedData) {
     let tr = table.insertRow();
     tr.insertCell().textContent = object.firstName + " " + object.lastName;
     tr.insertCell().textContent = object.userEmail;
