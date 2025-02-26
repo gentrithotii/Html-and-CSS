@@ -1,8 +1,7 @@
-const userList = [];
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
   getLocalStorageData();
   showLocalStorageData();
-};
+});
 
 async function storeData(event) {
   event.preventDefault();
@@ -77,15 +76,14 @@ function addElement() {
 }
 
 function showLocalStorageData() {
-  let table = document.querySelector(".table-my-0 tbody");
-  table.innerHTML = "";
-
   try {
     var storedData = JSON.parse(localStorage.getItem("userList")) || [];
   } catch (error) {
     console.error("Error parsing JSON", error);
     return;
   }
+  let table = document.querySelector(".table-my-0 tbody");
+  table.innerHTML = "";
 
   for (let object of storedData) {
     let tr = table.insertRow();
