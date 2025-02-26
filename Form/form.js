@@ -1,5 +1,8 @@
 const userList = [];
-document.body.onload = addElement;
+window.onload = function () {
+  getLocalStorageData();
+  showLocalStorageData();
+};
 
 async function storeData(event) {
   event.preventDefault();
@@ -30,6 +33,8 @@ async function storeData(event) {
 
   alert("Data has been saved");
   document.getElementById("my-Form").reset();
+
+  showLocalStorageData();
 }
 
 function checkIfUserExist(userEmail, userList) {
@@ -67,4 +72,19 @@ function addElement() {
   const currentDiv = document.getElementById("testDiv");
 
   document.body.insertBefore(newDiv, currentDiv);
+}
+
+function showLocalStorageData() {
+  let storeData = JSON.parse(localStorage.getItem("userList") || []);
+
+  arraDat = storeData;
+  let table = document.querySelector(".table-my-0");
+  table.innerHTML = "";
+
+  for (let object of arraDat) {
+    let tr = table.insertRow();
+    tr.insertCell().textContent = object.firstName + " " + object.lastName;
+    tr.insertCell().textContent = object.userEmail;
+    tr.insertCell().textContent = object.favoriteCodeLang;
+  }
 }
