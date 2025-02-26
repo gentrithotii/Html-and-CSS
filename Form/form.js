@@ -1,4 +1,5 @@
 const userList = [];
+document.body.onload = addElement;
 
 async function storeData(event) {
   event.preventDefault();
@@ -54,4 +55,16 @@ function getLocalStorageData() {
 
 function clearData() {
   localStorage.clear();
+}
+
+function addElement() {
+  const newDiv = document.createElement("div");
+
+  const newContet = document.createTextNode("Hello there m8");
+
+  newDiv.appendChild(newContet);
+
+  const currentDiv = document.getElementById("testDiv");
+
+  document.body.insertBefore(newDiv, currentDiv);
 }

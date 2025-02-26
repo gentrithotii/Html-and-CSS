@@ -10,8 +10,9 @@
 
 </head>
 <body>
+    
     <form class="form-Wrapper" id="my-Form"  onsubmit="storeData(event)">
-
+        
         <div class="form-fName">
             <label style="align-items: center;" for="fName">First name:</label>
             <input type="text" id="fName" value="">
@@ -20,13 +21,13 @@
          <div class="form-fLastName">
              <label for="fLastName">Last name:</label>
              <input type="text" id="fLastName" value="" >
-        </div>
-
-         <div class="form-fEmail">
-             <label for="fEmail">Email:</label>
+            </div>
+            
+            <div class="form-fEmail">
+                <label for="fEmail">Email:</label>
              <input type="text" id="fEmail" value="" >
         </div>
-
+        
         <label>Fav coding language</label>
         <select name="fLanguages" id="fLanguages">
             <option value="C">C</option>
@@ -34,15 +35,18 @@
             <option value="C#">C#</option>
             <option value="C++">C++</option>
         </select>
-    
+        
         <input class="button-blue" type="submit" value="Sumit">
-
+        
     </form>
     
     <button class="button" onclick="getLocalStorageData()">Show Local Storage Data</button>
     
     <button class="button" onclick="clearData()">Clear Stored Data</button>
+    
+    <main id="testDiv">
 
+    </main>
     
 </body>
 </html>
