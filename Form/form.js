@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   getLocalStorageData();
   showLocalStorageData();
-  clearData();
-  showLocalStorageData();
+  // clearData();
+  // showLocalStorageData();
 });
 
 async function storeData(event) {
